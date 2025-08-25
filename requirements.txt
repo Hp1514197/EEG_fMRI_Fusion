@@ -1,0 +1,14 @@
+numpy
+pandas
+matplotlib
+seaborn
+scikit-learn
+mne
+nibabel
+nilearn
+torch
+torchvision
+tensorflow
+scipy
+notebook
+jupyterlab
