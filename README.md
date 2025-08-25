@@ -30,7 +30,7 @@ EEG_fMRI_Fusion/
 ## Installation
 
 1. Clone this repository:
-   git clone https://github.com/yourusername/EEG_fMRI_Fusion.git
+   git clone https://github.com/HP1514197/EEG_fMRI_Fusion.git
    cd EEG_fMRI_Fusion
 
 2. Install dependencies:
