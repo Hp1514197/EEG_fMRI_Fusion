@@ -67,6 +67,33 @@ Read more about methodology, preprocessing pipelines, and fusion architecture [h
 ------------------------------------------
 ### Installation
 
-* Step I: Clone the Repository
 ```sh
-      $ git clone https://github.com/Hp1514197/EEG-fMRI-Fusion-Cognitive-Dysfunction
+# Step I: Clone the Repository
+$ git clone https://github.com/Hp1514197/EEG-fMRI-Fusion-Cognitive-Dysfunction
+
+# Step II: Install the required packages
+$ cd EEG-fMRI-Fusion-Cognitive-Dysfunction
+$ pip install -r requirements.txt
+
+# Step III: Run the code
+# To preprocess EEG data
+$ python eeg_preprocess.py
+
+# To preprocess fMRI data
+$ python fmri_preprocess.py
+
+# To run fusion analysis
+$ python fusion_model.py
+```
+------------------------------------------
+### Dissemination
+
+This project was developed as part of advanced research in multimodal neuroimaging and presented in academic discussions on **cognitive dysfunction analysis**.  
+
+Future scope includes integration with clinical datasets for **Alzheimer’s, Schizophrenia, and ADHD research**.  
+
+------------------------------------------
+### Acknowledgement
+
+We would like to extend sincere thanks to our mentors and peers for their continuous support and valuable inputs.  
+Special thanks to open-source communities of **MNE**, **Nilearn**, and **PyTorch**, whose tools made this fusion framework possible.  
