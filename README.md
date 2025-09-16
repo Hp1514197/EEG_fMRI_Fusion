@@ -1,64 +1,72 @@
-# EEG-fMRI Fusion
+<p align="center">
+ <img height=200px src="./eeg-fmri.jpg" alt="EEG-fMRI Fusion">
+</p>
 
-This project aims to build a pipeline for **multimodal brain data fusion** using EEG (electroencephalography) and fMRI (functional magnetic resonance imaging).  
-It includes preprocessing modules, fusion models, and visualization tools.
+<h1 align="center">EEG-fMRI Fusion for Cognitive Dysfunction Analysis</h1>
 
----
+<div align="center">
 
-## Project Structure
+[![Python version](https://img.shields.io/badge/python-3.10-blue.svg)](https://www.python.org/downloads/release/python-3100/)
 
-EEG_fMRI_Fusion/
-│── data/ # Raw datasets (EEG .edf/.set, fMRI .nii/.nii.gz)
-│── preprocessing/
-│ ├── eeg_preprocess.py
-│ ├── fmri_preprocess.py
-│── fusion/
-│ ├── fusion_model.py # Models combining EEG + fMRI
-│── utils/
-│ ├── visualization.py
-│ ├── helpers.py
-│── notebooks/
-│ ├── 01_eeg_preprocessing.ipynb
-│ ├── 02_fmri_preprocessing.ipynb
-│ ├── 03_fusion_training.ipynb
-│── main.py # Main pipeline script
-│── requirements.txt
-│── README.md
+<h4>This project integrates EEG and fMRI data to analyze cognitive dysfunction using advanced machine learning and deep learning techniques. The fusion framework leverages the high temporal resolution of EEG with the high spatial resolution of fMRI to provide deeper insights into brain activity, aiding early diagnosis and treatment research in neurological disorders.</h4>
 
----
+</div>
 
-## Installation
+-----------------------------------------
+### Inspiration
 
-1. Clone this repository:
-   git clone https://github.com/HP1514197/EEG_fMRI_Fusion.git
-   cd EEG_fMRI_Fusion
+* Neurological disorders such as Alzheimer’s, Schizophrenia, and ADHD are often linked to abnormalities in brain connectivity and cognition.  
+* EEG provides fine-grained temporal signals of brain activity, while fMRI captures spatial information. Individually, both modalities have limitations, but together they provide a more complete picture of brain function.  
+* The motivation behind this project is to design an **EEG-fMRI fusion framework** that helps clinicians and researchers understand neural patterns, detect early signs of dysfunction, and support precision medicine.  
 
-2. Install dependencies:
-   pip install -r requirements.txt
+------------------------------------------
+### Implementation Details
 
----
+This project can be broken down into 3 main modules:
 
-## Usage
+1. `EEG Preprocessing Module`  
+   - Cleans raw EEG signals (artifact removal, filtering, segmentation).  
+   - Extracts features such as spectral power, ERP components, and connectivity measures.  
 
-1. Preprocess EEG data:
-   python preprocessing/eeg_preprocess.py
+2. `fMRI Preprocessing and Feature Extraction Module`  
+   - Performs motion correction, normalization, and ROI extraction.  
+   - Extracts spatial connectivity patterns and hemodynamic responses.  
 
-2. Preprocess fMRI data:
-   python preprocessing/fmri_preprocess.py
+3. `Fusion & Analysis Module`  
+   - Applies multimodal fusion using deep learning (e.g., CNN + RNN, transformer-based models).  
+   - Performs classification/regression for cognitive dysfunction detection.  
+   - Visualizes multimodal brain activation patterns.  
 
-3. Train fusion model:
-   python main.py
+Read more about methodology, preprocessing pipelines, and fusion architecture [here](./EEG_fMRI_Fusion_Implementation.pdf).
 
----   
+------------------------------------------
+### Demo
 
-## Features
+* `EEG Signal Preprocessing`
 
-1. EEG preprocessing (filtering, epoching, artifact removal).
-2. fMRI preprocessing (smoothing, normalization, masking).
-3. EEG + fMRI fusion model.
-4. Visualization utilities.
+<p align="center">
+ <img height=400px src="./eeg-signal.png" alt="EEG Signal">
+</p>
 
----
+<br> 
 
-## Requirements
-See requirements.txt
+* `EEG-fMRI Fusion Analysis`
+
+<p align="center">
+    <img src="./fusion-demo.gif" alt="EEG-fMRI Fusion">
+</p>
+
+------------------------------------------
+### Prerequisites
+
+1. [Python 3.10](https://www.python.org/downloads/release/python-3100/)  
+2. [NumPy](https://numpy.org/), [Pandas](https://pandas.pydata.org/), [MNE](https://mne.tools/stable/index.html) (for EEG processing)  
+3. [NiBabel](https://nipy.org/nibabel/), [Nilearn](https://nilearn.github.io/stable/index.html) (for fMRI data handling)  
+4. [TensorFlow](https://www.tensorflow.org/) / [PyTorch](https://pytorch.org/) (for fusion models)  
+
+------------------------------------------
+### Installation
+
+* Step I: Clone the Repository
+```sh
+      $ git clone https://github.com/Hp1514197/EEG-fMRI-Fusion-Cognitive-Dysfunction
