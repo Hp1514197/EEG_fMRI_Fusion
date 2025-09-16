@@ -50,10 +50,18 @@ Read more about methodology, preprocessing pipelines, and fusion architecture [h
 
 <br> 
 
-* `EEG-fMRI Fusion Analysis`
+* `fMRI Signal Preprocessing`
 
 <p align="center">
-    <img src="./fusion-demo.gif" alt="EEG-fMRI Fusion">
+ <img height=400px src="./eeg-signal.png" alt="EEG Signal">
+</p>
+
+<br> 
+
+* `EEG_fMRI Fusion Analysis`
+
+<p align="center">
+ <img height=400px src="./eeg-signal.png" alt="EEG Signal">
 </p>
 
 ------------------------------------------
